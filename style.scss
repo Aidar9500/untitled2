@@ -1,0 +1,16 @@
+@import "font";
+@import "variables";
+@import "setting";
+
+section#top {
+  position: relative;
+  @extend %flex;
+  align-items: center;
+  height: 100vh;
+  background: url(img/bg.jpg) no-repeat center 0 / cover;
+}
+.wrapper {
+  max-width: $maw;
+  margin: 0 auto;
+
+}
