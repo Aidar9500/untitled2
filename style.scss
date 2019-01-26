@@ -9,7 +9,7 @@ section#top {
   background-attachment: fixed;
   &>.wrapper {
   @extend %flex;
-    align-items: center;
+
     height: 100%;
   }
   .header {
@@ -69,6 +69,26 @@ section#top {
 
           }
         }
+  }
+  .sloganCont {
+    max-width: 58%;
+    h1{
+      font-family: $Montserrat;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      color: $grey;
+
+    }
+    h4{
+      font-family: $OpenSans;
+      color: $grey;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      margin: 20px 0 15px 0;
+    }
   }
 
 }
