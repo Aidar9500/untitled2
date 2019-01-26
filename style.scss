@@ -6,6 +6,7 @@ section#top {
   position: relative;
   height: 100vh;
   background: url(img/bg.jpg) no-repeat center 0 / cover;
+  background-attachment: fixed;
   &>.wrapper {
   @extend %flex;
     align-items: center;
@@ -29,14 +30,39 @@ section#top {
             li{
               margin-left: 30px;
               a{
-
                   font-size: 14px;
                   font-family: $Montserrat;
-                font-weight: 400;
+                  font-weight: 400;
                   color: $color1;
                   text-transform: uppercase;
+                  text-decoration:none;
+                &:hover {
+                  color:$red;
+
+                }
 
 
+
+              }
+              &.social{
+                a{
+                  width: 25px;
+                  height: 25px;
+                  display: inline-block;
+                  background: url("img/social-icons.png") no-repeat;
+                  @include addprefix(filter, grayscale(100%));
+                  transition: all 0.3s ease;
+
+                  &:hover {
+                    @include addprefix(filter, grayscale(0%));
+                  }
+                  &.vk {
+                    background-position: 0 0;
+                  }
+                  &.ins {
+                    background-position: 100% 0;
+                  }
+                }
 
               }
             }
