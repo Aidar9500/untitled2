@@ -4,13 +4,45 @@
 
 section#top {
   position: relative;
-  @extend %flex;
-  align-items: center;
   height: 100vh;
   background: url(img/bg.jpg) no-repeat center 0 / cover;
-}
-.wrapper {
-  max-width: $maw;
-  margin: 0 auto;
+  &>.wrapper {
+  @extend %flex;
+    align-items: center;
+    height: 100%;
+  }
+  .header {
+    @extend %flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-self: flex-start;
+        .logo{
+          display:block;
+          width: 140px;
+          height: 70px;
+          background: url("img/logo.png") no-repeat;
+        }
+        nav {
+          ul {
+            @extend %ul, %flex;
+            margin-top: 25px;
+            li{
+              margin-left: 30px;
+              a{
+
+                  font-size: 14px;
+                  font-family: $Montserrat;
+                font-weight: 400;
+                  color: $color1;
+                  text-transform: uppercase;
+
+
+
+              }
+            }
+
+          }
+        }
+  }
 
 }

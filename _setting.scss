@@ -1,8 +1,25 @@
+$maw: 960px;
 *{
   margin: 0;
   padding: 0;
 }
+
 %flex {
   display: flex;
   flex-wrap: wrap;
 }
+%ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+.wrapper {
+  max-width: $maw;
+  margin: 0 auto;
+  position: relative;
+
+}
+$color1:rgb(38, 55, 66);
+$Montserrat: Monserat, sans-serif;
+$OpenSans: 'Open Sans', Sans-serif;
