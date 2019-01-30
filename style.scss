@@ -1,5 +1,4 @@
 @import "font";
-@import "variables";
 @import "setting";
 
 section#top {
@@ -89,6 +88,47 @@ section#top {
       line-height: 40px;
       margin: 20px 0 15px 0;
     }
+    .btn {
+      display: block;
+      text-decoration: none;
+      margin-top: 50px;
+      span{
+        color: white;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 25px 35px;
+        background-color: $red;
+        border-radius: 7px;
+        text-transform: uppercase;
+
+        
+
+
+
+
+
+      }
+
+
+    }
+  }
+
+
+}
+section#snippets{
+  position: relative;
+  &>.wrapper{
+    &>ul {
+      @extend  %ul, %flex;
+      margin: 80px 0;
+      li{
+        width: (100%/ 3);
+        box-sizing: border-box;
+        padding-right: 55px;
+      }
+    }
+
   }
 
 }
