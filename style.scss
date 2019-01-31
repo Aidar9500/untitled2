@@ -126,6 +126,25 @@ section#snippets{
         width: (100%/ 3);
         box-sizing: border-box;
         padding-right: 55px;
+        h3 {
+          font-family: $Montserrat;
+          font-size:20px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $grey;
+
+
+
+        }
+        .descr {
+          color: $lightgrey;
+          font-family: $OpenSans;
+          font-weight: 400;
+          font-size: 15px;
+
+
+
+        }
       }
     }
 
