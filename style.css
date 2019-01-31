@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext");
+* {
+  margin: 0;
+  padding: 0; }
+
+section#top > .wrapper, section#top .header, section#top .header nav ul, section#snippets > .wrapper > ul {
+  display: flex;
+  flex-wrap: wrap; }
+
+section#top .header nav ul, section#snippets > .wrapper > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative; }
+
+.more {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #fa5c65;
+  font-family: Monserat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .more:after {
+    content: 'тЮФ'; }
+
+/*-----------------------------------
+MIXIN
+-----------------------------------*/
+section#top {
+  position: relative;
+  height: 100vh;
+  background: url(img/bg.jpg) no-repeat center 0/cover;
+  background-attachment: fixed; }
+  section#top > .wrapper {
+    height: 100%; }
+  section#top .header {
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-self: flex-start; }
+    section#top .header .logo {
+      display: block;
+      width: 140px;
+      height: 70px;
+      background: url("img/logo.png") no-repeat; }
+    section#top .header nav ul {
+      margin-top: 25px; }
+      section#top .header nav ul li {
+        margin-left: 30px; }
+        section#top .header nav ul li a {
+          font-size: 14px;
+          font-family: Monserat, sans-serif;
+          font-weight: 400;
+          color: #263742;
+          text-transform: uppercase;
+          text-decoration: none; }
+          section#top .header nav ul li a:hover {
+            color: #fa5c65; }
+        section#top .header nav ul li.social a {
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+          background: url("img/social-icons.png") no-repeat;
+          -webkit-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          filter: grayscale(100%);
+          transition: all 0.3s ease; }
+          section#top .header nav ul li.social a:hover {
+            -webkit-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            filter: grayscale(0%); }
+          section#top .header nav ul li.social a.vk {
+            background-position: 0 0; }
+          section#top .header nav ul li.social a.ins {
+            background-position: 100% 0; }
+  section#top .sloganCont {
+    max-width: 58%; }
+    section#top .sloganCont h1 {
+      font-family: Monserat, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      color: #314a5b; }
+    section#top .sloganCont h4 {
+      font-family: "Open Sans", Sans-serif;
+      color: #314a5b;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 40px;
+      margin: 20px 0 15px 0; }
+    section#top .sloganCont .btn {
+      display: block;
+      text-decoration: none;
+      margin-top: 50px; }
+      section#top .sloganCont .btn span {
+        color: white;
+        font-family: "Open Sans", Sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 25px 35px;
+        background-color: #fa5c65;
+        border-radius: 7px;
+        text-transform: uppercase; }
+
+section#snippets {
+  position: relative; }
+  section#snippets > .wrapper > ul {
+    margin: 80px 0; }
+    section#snippets > .wrapper > ul li {
+      width: 33.3333333333%;
+      box-sizing: border-box;
+      padding-right: 55px; }
+      section#snippets > .wrapper > ul li h3 {
+        font-family: Monserat, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #314a5b; }
+      section#snippets > .wrapper > ul li .descr {
+        color: #9aa0ab;
+        font-family: "Open Sans", Sans-serif;
+        font-weight: 400;
+        font-size: 15px; }
+
+/*# sourceMappingURL=style.css.map */
