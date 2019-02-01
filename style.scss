@@ -159,7 +159,10 @@ section#portfolio{
     &>.col{
       width: 48%;
       &:first-of-type{
-        max-width: 100%;
+        max-width: 100%;}
+      &:nth-of-type(2) {
+        align-self: center;
+      }
         h2 {
           font-family: $Montserrat;
           font-size:40px;
@@ -183,8 +186,9 @@ section#portfolio{
           font-family: $OpenSans;
           font-size: 15px;
           font-weight: 400;
+          color: $lightgrey;
         }
-      }
+
 
     }
   }
