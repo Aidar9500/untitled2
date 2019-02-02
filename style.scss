@@ -152,7 +152,7 @@ section#snippets{
 
 }
 section#portfolio{
-
+  margin: 80px 0;
   &>.wrapper{
     @extend %flex;
     justify-content: space-between;
@@ -194,3 +194,116 @@ section#portfolio{
   }
 
 }
+section#team{
+  &>.wrapper{
+    &>.row1{
+        h2 {
+          font-family: $Montserrat;
+          font-size: 32px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $grey;
+          margin: 0;
+        }
+
+        h3 {
+          color: $grey;
+          font-family: $OpenSans;
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+    &>.row2{
+      @extend %flex, %ul;
+      margin-top: 30px;
+      li{
+        @extend %flex;
+        width: (100%/3);
+        padding-right: 35px;
+        box-sizing: border-box;
+        .col1 {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background: no-repeat center/cover;
+      }
+        .col2 {
+          width: calc(100% - 128px);
+          padding-left: 20px;
+          box-sizing: border-box;
+          h3{
+            color: $grey;
+            font-family: $Montserrat;
+            font-size: 23px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+          }
+          h4 {
+            color: $red;
+            font-family: $OpenSans;
+            font-size:14px;
+            font-weight: 700;
+          }
+          .descr {
+            color: $lightgrey;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $OpenSans;
+            margin-top: 15px;
+
+          }
+
+        }
+
+
+      }
+    }
+
+      }
+
+    }
+footer {
+
+  @extend .wrapper, %flex ;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:80px;
+  min-height: 90px;
+  border-top: 1px solid #9aa0ab;
+  .col1 {
+    a{
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      margin-right: 20px;
+      background:url(img/Social-Icons2.png) no-repeat  0 center;
+      opacity: 0.8;
+      &.tw {
+        background-position-x: 0 ;
+      }
+      &.ins {
+        background-position-x: 36% ;
+      }
+      &.fb {
+        background-position-x: 66%  ;
+      }
+      &.gp {
+        background-position-x: 100% ;
+
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .col2 {
+    font-family: $OpenSans;
+    color: $lightgrey;
+    font-size:13px;
+    font-weight: 400;
+
+    
+  }
+}
+
