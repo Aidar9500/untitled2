@@ -6,6 +6,9 @@ section#top {
   height: 100vh;
   background: url(img/bg.jpg) no-repeat center 0 / cover;
   background-attachment: fixed;
+
+
+
   &>.wrapper {
   @extend %flex;
 
@@ -35,6 +38,30 @@ section#top {
                   color: $color1;
                   text-transform: uppercase;
                   text-decoration:none;
+
+                @include mq-small {
+                  font-size: 18px;
+                }
+                @include mq-small-up {
+                  font-size: 20px;
+                }
+                @include mq-medium {
+                  font-size: 22px;
+                }
+                @include mq-medium-up {
+                  font-size: 24px;
+                }
+                @include mq-larger {
+                  font-size: 20px;
+                }
+
+
+
+
+
+
+
+
                 &:hover {
                   color:$red;
 
@@ -303,7 +330,8 @@ footer {
     font-size:13px;
     font-weight: 400;
 
-    
+
   }
 }
+
 
